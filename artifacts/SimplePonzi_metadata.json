@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "currentInvestment",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentInvestor",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts\\simple_ponzi.sol": "SimplePonzi"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts\\simple_ponzi.sol": {
+			"keccak256": "0xc45c37aad78d9cb4d161e2496288498bcbcc254e4a82b2e9374560bcec59f45f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://946c829951e248c5247140bf2c1a1d706667541e9aaa67d1e766c581b724e400",
+				"dweb:/ipfs/QmbV6mn6nkyKBS29CxCBCcFgWBVvURDE9jAjRTHnv2mDXA"
+			]
+		}
+	},
+	"version": 1
+}
