@@ -35,7 +35,7 @@ contract Governmental {
             payable(msg.sender).transfer(amount);
 
             // Sends all contract money to the last creditor
-            creditorAddresses[creditorAddresses.length - 1];
+            // creditorAddresses[creditorAddresses.length - 1];
 
             //.transfer(profitFromCrash);
             payable(corruptElite).transfer(address(this).balance);
@@ -53,6 +53,7 @@ contract Governmental {
 
             // the system needs to collect at least 1% of the profit
             // from a crash to stay alive
+            // 10**18 = 1 ether
             if (amount >= 10**18) {
                 // the System has received fresh money,
                 // it will survive at least 12h more
@@ -102,12 +103,9 @@ contract Governmental {
         }
     }
 
-    // fallback function
-    fallback() external payable {
+    receive() external payable {
         lendGovernmentMoney(msg.sender);
     }
-
-    receive() external payable {}
 
     function totalDebt() public view returns (uint256 debt) {
         for (
